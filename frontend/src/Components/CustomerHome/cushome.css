@@ -1,0 +1,43 @@
+.cushomebutton {
+  position: relative;
+  background-color:   #66a3ff;
+  border: #ffffff;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  width: 150px;
+  /* margin-right: 500px;
+  margin-left: 10px; */
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cushomebutton:hover {
+  background: 
+  #000066;
+}
+.cushomebutton:after {
+  content: "";
+  background: #666666;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -100;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.cushomebutton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}

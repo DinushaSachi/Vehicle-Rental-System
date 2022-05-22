@@ -1,0 +1,288 @@
+* {
+  @include box-sizing(border-box);
+}
+body {
+  text-align: center;
+  font-family: "Lato", "sans-serif";
+  font-weight: 400;
+}
+.chi_a {
+  text-decoration: none;
+}
+header {
+  padding: 2em 10%;
+}
+
+header {
+  background-color: #1b2631;
+  height: 150px;
+  color: white;
+}
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+i {
+  color: darken(#077abc, 10%);
+}
+span {
+  font-weight: 300;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+h3,
+h3 .chi_a {
+  color: #32ccfe;
+}
+.chi_a {
+  @include transition(color 0.3s);
+}
+.chi_a:hover {
+  @include transition(color 0.3s);
+  color: white;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+h2.heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  color: #1b2631;
+  border-bottom: 1px solid #506982;
+  padding-bottom: 3px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.controls {
+  text-align: left;
+  position: relative;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea,
+button,
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #191970;
+  width: 100%;
+  margin-bottom: 18px;
+  color: #191970;
+  font-family: "Lato", "sans-serif";
+  font-size: 16px;
+  font-weight: 250;
+  background-color: #fff;
+  @include border-radius(2px);
+  @transition (all 0.3s);
+}
+select:focus,
+select:hover {
+  outline: none;
+  border-color: #9fb1c1;
+}
+select.label {
+  color: #077abc;
+  cursor: text;
+}
+.fa-sort {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  color: #999;
+}
+select {
+  @include appearance(none);
+  cursor: pointer;
+}
+label {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  color: #555;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  background-color: rgba(255, 255, 255, 0);
+  pointer-events: none;
+  @include transition(color 0.3s, top 0.3s, background-color 0.8s);
+}
+label.active {
+  top: -15px;
+  color: #555;
+  background-color: rgba(255, 255, 255, 1);
+}
+textarea {
+  resize: none;
+  height: 150px;
+}
+button {
+  cursor: pointer;
+  background-color: #07b3a1;
+  border: none;
+  color: #fff;
+  padding: 12px 0;
+}
+button:hover {
+  background-color: lighten(#07b3a1, 5%);
+}
+
+/*                      */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: #1d2026;
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.chinav {
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+.chinav .menu-img {
+  width: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.chinav .logo {
+  width: 160px;
+  cursor: pointer;
+}
+.chinav ul {
+  flex: 1;
+  text-align: right;
+}
+.chinav ul li {
+  display: inline-block;
+  list-style: none;
+}
+.chinav ul li .chi_a {
+  text-decoration: none;
+  color: #fff;
+}
+button {
+  background: #efefef;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+button span {
+  display: block;
+  background: #999;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-left: 2px;
+  transition: background 0.5s, margin-left 0.5s;
+}
+.lamp-container {
+  position: absolute;
+  top: -20px;
+  left: 22%;
+  width: 200px;
+}
+.lamp {
+  width: 100%;
+}
+.light {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  margin-left: -10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.text-container {
+  max-width: 600px;
+  margin-top: 7%;
+  margin-left: 50%;
+}
+.text-container h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+.text-container .chi_a {
+  text-decoration: none;
+  background: #00986f;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 0;
+  border-radius: 30px;
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 150px;
+}
+.control .line {
+  width: 250px;
+  height: 4px;
+  background: #191970;
+  margin: 0 20px;
+  border-radius: 2px;
+}
+.control .line span {
+  width: 50%;
+  height: 8px;
+  margin-top: -2px;
+  border-radius: 4px;
+
+  background: #00986f;
+  display: block;
+}
+.active {
+  background: green;
+}
+.active span {
+  background: #191970;
+  margin-left: 31px;
+}
+.on {
+  opacity: 1;
+}
+.main {
+  text-align: left;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 150px;
+}
+
