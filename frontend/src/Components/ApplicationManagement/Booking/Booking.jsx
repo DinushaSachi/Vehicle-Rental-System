@@ -76,10 +76,7 @@ export default function Booking() {
         <h4>Book Your Own Trip</h4>
         </header>
 <br></br>
-<div style={{ marginLeft: "-10px", marginRight: "850px" }} >
-  <input type="radio" name="Book" value="One Way Trip"/> One Way Trip
-  <input type="radio" name="Book" value="Return Trip"/> Return Trip
-</div>
+
         
       <br></br>
       <form
@@ -97,8 +94,8 @@ export default function Booking() {
               name="Plocation"
               required
               value={PickupLocation}
-              onChange={(event) => {
-                setPlocation(event.target.value);
+              onChange={(e) => {
+                setPlocation(e.target.value);
               }}
             />
             <label for="name" class="active">
@@ -132,7 +129,7 @@ export default function Booking() {
                 setPtime(event.target.value);
               }}
             />
-            <label for="nic" class="active">
+            <label for="put" class="active">
               Pick-up-Time
             </label>
           </div>
@@ -158,29 +155,38 @@ export default function Booking() {
               class="floatLabel"
               name="Passengers"
               required
+              pattern="\d{1,2}" 
               onChange={(event) => {
                 setPassengers(event.target.value);
               }}
             />
-            <label for="email" class="active">
+            <label for="passengers" class="active">
               Passengers
             </label>
           </div>
      
-        <div class="controls">
-          <input
-            type="text"
-            id="Vtype"
-            class="floatLabel"
-            name="Vtype"
-            required
-            onChange={(event) => {
-              setVtype(event.target.value);
-            }}
-          />
-          <label for="address" class="active">
+          <div class="form-group">
+          <div class="controls">
+            <i class="fa fa-sort"></i>
+            <select
+              class="Districts"
+              onChange={(event) => {
+                setVtype(event.target.value);
+              }}
+            >
+          <option value="Vehicle Category" selected>
+                Vehicle Category
+              </option>
+              <option value="SEDAN">SEDAN</option>
+              <option value="COUPE">COUPE</option>
+              <option value="HatchBack">HatchBack</option>
+              <option value="SUV">SUV</option>
+              <option value="MiniVan">MiniVan</option>
+            </select>
+          <label for="Vtype" class="active">
             Vehicle Type
           </label>
+        </div>
         </div>
         <div class="form-group">
         <h2 class="heading">Customer Details</h2>
@@ -204,6 +210,7 @@ export default function Booking() {
                 <Form.Label>Email</Form.Label>
                 <Form.Control
                   type="text"
+                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                   placeholder="Email"
                   required
                   onChange={(e) => {
@@ -247,16 +254,20 @@ export default function Booking() {
           </div>
           </div>
 
+          <Button
+            type="submit"
+            style={{ width: "90px", height: "40px", marginRight: "20px" }}
+          >
+            Submit
+          </Button>
+
+          <Link to="/Serviceshome">
             <Button
-             
-              style={{ width: "120px", height: "40px", marginRight: "20px", backgroundColor: "##ff0000"}}
-              onClick= {e=>{
-                setData(e);
-              }}
+              style={{ width: "90px", height: "40px", backgroundColor: "red" }}
             >
-              AddBooking
+              Cancel
             </Button>
-          
+          </Link>
              
         </div>
       </form>

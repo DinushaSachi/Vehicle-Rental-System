@@ -16,7 +16,7 @@ import EditDriverDetails from "./Components/ApplicationManagement/DriverApplicat
 import EditVehicleOwner from "./Components/ApplicationManagement/3rdPartyVehicleApplication/EditVehicleOwner";
 import EditThirdPartyVehicle from "./Components/ApplicationManagement/3rdPartyVehicleApplication/EditThirdPartyVehicle";
 import login from "./Components/Login/login";
-import Booking from "./Components/ApplicationManagement/Booking/BookingApplication";
+import Booking from "./Components/ApplicationManagement/Booking/Booking";
 import EditBookingDetails from "./Components/ApplicationManagement/Booking/EditBookingDetails";
 import AllBooking from "./Components/ApplicationManagement/Booking/BookingDetails";
 import Report from "./Components/ApplicationManagement/Report/ThirdPartyVehicleReport";

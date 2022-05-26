@@ -163,21 +163,30 @@ const EditBookingDetails = () => {
               Passengers
             </label>
           </div>
+          <div class="form-group">
           <div class="controls">
-            <input
-              type="text"
-              id="Vtype"
-              class="floatLabel"
-              name="Vtype"
-              defaultValue={BookingDetails.VehicleType}
+            <i class="fa fa-sort"></i>
+           
+            <select
+              class="VehicleType"
               onChange={(event) => {
                 setVtype(event.target.value);
               }}
-            />
-            <label for="nic" class="active">
+            >
+          <option value="Vehicle Category" selected>
+                Vehicle Category
+              </option>
+              <option value="SEDAN">SEDAN</option>
+              <option value="COUPE">COUPE</option>
+              <option value="HatchBack">HatchBack</option>
+              <option value="SUV">SUV</option>
+              <option value="MiniVan">MiniVan</option>
+            </select>
+          <label for="Vtype" class="active">
             Vehicle Type
-            </label>
-          </div>
+          </label>
+        </div>
+        </div>
           <div class="controls">
             <input
               type="text"
@@ -224,21 +233,7 @@ const EditBookingDetails = () => {
                 Mobile No
           </label>
         </div>
-        <div class="controls">
-          <input
-            type="text"
-            id="comments"
-            class="floatLabel"
-            name="comments"
-            defaultValue={BookingDetails.Message}
-            onChange={(event) => {
-              setMessage(event.target.value);
-            }}
-          />
-          <label for="address" class="active">
-                Message
-          </label>
-        </div>
+        
        
         {/* <!--  More --> */}
         <div class="form-group">
