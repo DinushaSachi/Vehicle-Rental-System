@@ -169,7 +169,7 @@ export default function Booking() {
           <div class="controls">
             <i class="fa fa-sort"></i>
             <select
-              class="Districts"
+              class="VehicleType"
               onChange={(event) => {
                 setVtype(event.target.value);
               }}

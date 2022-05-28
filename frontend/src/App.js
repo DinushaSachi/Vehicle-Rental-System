@@ -27,6 +27,10 @@ import Dreport from "./Components/ApplicationManagement/Report/reportGenerate";
 import FeedBack from "./Components/ApplicationManagement/FeedBack/FeedBackapplication";
 import AllFeedBack from "./Components/ApplicationManagement/FeedBack/FeedbackDetails";
 import EditFeedBackdetails from "./Components/ApplicationManagement/FeedBack/EditFeedbackDetails";
+import Footer from "./Components/ApplicationManagement/Booking/FooterComponent";
+import CusFooter from "./Components/CustomerHome/CusFooter"
+
+
 
 
 function App() {
@@ -82,12 +86,15 @@ function App() {
 
           <Route path="/addBooking" exact component={CusHeader} />
           <Route path="/addBooking" exact component={Booking} /> 
+          
 
           <Route path="/editBooking/:id" exact component={CusHeader} />
           <Route path="/editBooking/:id" exact component={EditBookingDetails} />
+         
 
           <Route path="/SeeAllBooking" exact component={Header} />
           <Route path="/SeeAllBooking" exact component={AllBooking} />
+          <Route path="/SeeAllBooking" exact component={CusFooter} />
 
           <Route path="/Vreport" exact component={Report} />
 
@@ -96,6 +103,7 @@ function App() {
 
           <Route path="/checkBooking" exact component={Header} />
           <Route path="/checkBooking" exact component={CheckBooking} />
+          <Route path="/checkBooking" exact component={Footer} />
 
 
 
